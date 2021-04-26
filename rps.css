@@ -1,0 +1,194 @@
+* {
+  text-align: center;
+}
+
+body {
+  background-image: url("https://source.unsplash.com/B5PNmw5XSpk");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1, h2 {
+  font-family: 'Freckle Face', cursive;
+  margin: auto;
+}
+
+h1  {
+  animation: bounce .3s ease infinite alternate;
+  animation-play-state: running;
+  font-size: 100px;
+  color: indianred;
+  text-shadow: 2px 2px #FFFFF0;
+}
+
+#subheader {
+  font-size: 40px;
+  color: #4682B4;
+  text-shadow: #FFFF 0px 0px 3px;
+}
+
+hr {
+  border-top: 1px solid darkseagreen;
+  width: 50%;
+}
+
+h3, button, p, span, footer {
+  font-family: 'Dosis', sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#game_over {
+  font-family: 'Freckle Face', cursive;
+  color: darkseagreen;
+  text-shadow: 2px 2px #FFFFF0;
+  font-size: 200px;
+  animation-name: stretch;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+#rule_header {
+  padding: 0px;
+  margin: auto;
+}
+
+#battle_stats {
+  margin: auto;
+  font-weight: bold;
+}
+
+#rules {
+  border: 2px solid white;
+  color: saddlebrown;
+  background-color: #FFE4B5;
+  width: 40%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+#summary {
+  width: 90%;
+  margin: auto;
+}
+
+#outer_game_board {
+  margin-top: 50px;
+}
+
+#inner_game_board {
+  border: 2px solid white;
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+  background-color: darkseagreen;
+
+}
+
+#counters {
+  width: 90%;
+  font-size: 30px;
+  color: #FFE4B5;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+#battle_buttons {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#win_counter, #loss_counter {
+  color: indianred;
+  font-weight: bolder;
+}
+
+.battle_button {
+  background-color: rgba(70, 130, 180, 1);
+  color: #FFE4B5;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  padding: 50px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.battle_button:hover {
+  background-color: #396a93;
+}
+
+.button:active {
+  background-color: #2eb8b3;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.outcome {
+  font-size: 30px;
+  color: indianred;
+}
+
+#restart {
+  font-size: 20px;
+  margin: 10px;
+  background-color: lavenderblush;
+  border-radius: 8px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(.5);
+        border-radius: 100%;
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 #CCC,
+                 0 7px 0 #CCC,
+                 0 8px 0 #CCC,
+                 0 9px 0 #CCC,
+                 0 50px 25px rgba(0, 0, 0, .2);
+  }
+}

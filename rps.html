@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Giants, Wizards, & Elves</title>
+    <link rel="shortcut icon" href="https://www.pngix.com/pngfile/big/290-2905731_sparkle-sparklemoji-glitter-emoji-blue-purple-sparkle-png.png" type="image/x-icon">  
+    <link rel="stylesheet" href="rps.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Freckle+Face&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Giants, Wizards, & Elves!</h1>
+    <h2 id="subheader">Beat the evil queen to protect the kingdom</h2>
+
+    <br>
+    <hr>
+    <br>
+
+    <div id="game_over"></div>
+
+    <div id="content">
+      <div id="rules">
+        <h3 id="rule_header">Rules</h3>
+        <div id="summary">
+          <p>An evil queen is trying to take over your peaceful kingdom! Battle her forces until one of you has won 5 times.</p>
+        </div>
+        <p id="battle_stats">
+          Giant beats Elf
+          <br>
+          Elf beats Wizard
+          <br>
+          Wizard beats Giant
+        </p>
+      </div>
+
+
+
+      <div id="outer_game_board">
+        <div id="inner_game_board">
+          <div id="counters">
+            <h2>Wins: <span id="win_counter">0</span></h2>
+            <h2>Losses: <span id="loss_counter">0</span></h2>
+          </div>
+
+          <br>
+
+          <div id="battle_buttons">
+            <button type="button" class="battle_button" id="Giant" onclick="game('Giant')">Giant</button>
+            <button type="button" class="battle_button" id="Wizard" onclick="game('Wizard')">Wizard</button>
+            <button type="button" class="battle_button" id="Elf" onclick="game('Elf')">Elf</button>
+          </div>
+
+          <p class="outcome" id="computer_move"></p>
+          <p class="outcome" id="outcome"></p>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <button type="button" onclick="window.location.reload()" id="restart">Restart Game</button>
+
+    <br>
+    <hr>
+    <br>
+
+    <footer>Rachael Stanislaw | LEARN academy 2021</footer>
+
+    <script type="text/javascript" src="rps.js"></script>
+  </body>
+</html>
